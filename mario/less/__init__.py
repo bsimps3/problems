@@ -6,6 +6,11 @@ def exists():
     """mario.c exists"""
     check50.exists("mario.c")
     check50.include("1.txt", "2.txt", "8.txt")
+    
+@check50.check()
+def exists():
+    """pseudocode.txt exists"""
+    check50.exists("pseudocode.txt")
 
 @check50.check(exists)
 def compiles():
